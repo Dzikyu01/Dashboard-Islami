@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/img_header"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_header_dashboard_night" />
+
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_rounded_text_view"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/welcome"
+            android:textColor="@color/colorText" />
+
+        <!-- horizontal scroll menu-->
+        <HorizontalScrollView
+            android:id="@+id/horizontal_scroll_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_header"
+            android:layout_marginHorizontal="8dp"
+            android:background="@drawable/bg_rounded_menu">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Linear layout for menu doa-->
+                <LinearLayout
+                    android:id="@+id/btn_doa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_menu_doa" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Doa"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorText"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <!-- Linear layout for menu dzikir-->
+                <LinearLayout
+                    android:id="@+id/btn_dzikir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_menu_dzikir" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/dzikir"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <!-- Linear layout for menu zakat-->
+                <LinearLayout
+                    android:id="@+id/btn_zakat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_menu_zakat" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/zakat"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorText"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <!-- Linear layout for menu sholat-->
+                <LinearLayout
+                    android:id="@+id/btn_sholat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_menu_jadwal_sholat" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/jadwal_sholat"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorText"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <!-- Linear layout for menu jadwal kajian-->
+                <LinearLayout
+                    android:id="@+id/btn_kajian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_menu_video_kajian" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/kajian"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorText"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tv_inspiration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/inspiration"
+            android:padding="10dp"
+            android:layout_below="@+id/horizontal_scroll_menu"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/colorText"
+            android:textSize="20sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_inspiration"
+            tools:listitem="@layout/item_row_inpiration"
+            android:layout_below="@+id/tv_inspiration"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
