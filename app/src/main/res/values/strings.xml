@@ -7,5 +7,12 @@
     <string name="jadwal_sholat">Jadwal Sholat</string>
     <string name="kajian">kajian</string>
     <string name="inspiration">Inspiration</string>
-    <string name="pagi_dan_malam">Pagi Dan Malam</string>
+    <string name="pagi_dan_malam">Pagi &amp; Dan Malam</string>
+    <string name="makanan_dan_minuman">Makanan Dan Minuman</string>
+    <string name="makanan_minuman"><![CDATA[Makanan & Minuman]]></string>
+    <string name="perjalanan">Perjalanan</string>
+    <string name="doa_sholat">Doa Sholat</string>
+    <string name="etika_baik">Etika Baik</string>
+    <string name="doa_perjalanan">Doa Perjalanan</string>
+    <string name="doa_rumah">Doa Rumah</string>
 </resources>
