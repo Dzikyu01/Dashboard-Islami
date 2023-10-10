@@ -12,12 +12,13 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/imgmakananminuman"
+            android:id="@+id/imgdoa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_doa_makanan_minuman" />
 
         <TextView
+            android:id="@+id/tvdoa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"

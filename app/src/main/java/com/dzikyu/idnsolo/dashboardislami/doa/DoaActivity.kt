@@ -4,11 +4,12 @@ import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.dzikyu.idnsolo.dashboardislami.R
+import com.dzikyu.idnsolo.dashboardislami.databinding.ActivityDoaBinding
 import com.dzikyu.idnsolo.dashboardislami.databinding.ActivityMainBinding
 
 class DoaActivity : AppCompatActivity() {
 
-    private lateinit var binding : ActivityMainBinding
+    private lateinit var binding : ActivityDoaBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,7 +18,7 @@ class DoaActivity : AppCompatActivity() {
         actionBar?.title = "Doa Harian"
         actionBar?.setDisplayHomeAsUpEnabled(true)
 
-        binding =  ActivityMainBinding.inflate(layoutInflater)
+        binding =  ActivityDoaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
     }
