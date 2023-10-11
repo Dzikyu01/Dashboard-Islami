@@ -13,9 +13,11 @@
         android:theme="@style/Theme.DashboardIslami"
         tools:targetApi="31">
         <activity
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
             android:name=".doa.ListDoaActivity"
             android:exported="false" />
         <activity
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
             android:name=".doa.DetailDoaActivity"
             android:exported="false" />
         <activity
