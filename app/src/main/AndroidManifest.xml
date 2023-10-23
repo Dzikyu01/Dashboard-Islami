@@ -13,13 +13,19 @@
         android:theme="@style/Theme.DashboardIslami"
         tools:targetApi="31">
         <activity
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
-            android:name=".doa.ListDoaActivity"
+            android:name=".kajian.KajianActivity"
             android:exported="false" />
         <activity
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
-            android:name=".doa.DetailDoaActivity"
+            android:name=".sholat.ZakatActivity"
             android:exported="false" />
+        <activity
+            android:name=".doa.ListDoaActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".doa.DetailDoaActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity
             android:name=".doa.DoaActivity"
             android:exported="false" />

@@ -27,6 +27,12 @@ class MainActivity : AppCompatActivity() {
         binding.btnDoa.setOnClickListener {
             startActivity(Intent(this, DoaActivity::class.java))
         }
+        binding.btnZakat.setOnClickListener {
+            startActivity(Intent(this, DoaActivity::class.java))
+        }
+        binding.btnKajian.setOnClickListener {
+            startActivity(Intent(this, DoaActivity::class.java))
+        }
     }
 
     private fun initRecyclerViewInspiration() {

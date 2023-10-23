@@ -7,4 +7,8 @@
     <color name="colorAccent">#EAF9FF</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorText">#474747</color>
+    <color name="colorGray">#E0E0E0</color>
+    <color name="colorBlue">#3F51B5</color>
+    <color name="colorPurple">#9C27B0</color>
+    <color name="colorRed">#F44336</color>
 </resources>

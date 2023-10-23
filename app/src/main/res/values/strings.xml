@@ -16,4 +16,17 @@
     <string name="doa_perjalanan">Doa Perjalanan</string>
     <string name="doa_rumah">Doa Rumah</string>
     <string name="doa_makanan_dan_minuman">Doa makanan dan minuman</string>
+    <string name="hitung">Hitung</string>
+    <string name="total_keseluruhan_harta">Total Keseluruhan Harta</string>
+    <string name="rp_92_395_000">Rp 92 395 000</string>
+    <string name="status">Status</string>
+    <string name="wajib">Wajib</string>
+    <string name="total_harta_keseluruhan">Total harta keseluruhan</string>
+    <string name="zakat_yang_dikeluarkan">Zakat yang dikeluarkan</string>
+    <string name="_85_gram">85 gram</string>
+    <string name="_1_gram">1 Gram</string>
+    <string name="harga_emas_hari_ini_16_oct_2023">harga emas hari ini 16 oct 2023</string>
+    <string name="judul_kajian">Judul Kajian</string>
+    <string name="channel_youtube">Channel Youtube</string>
+    <string name="nama_penceramah">Nama Penceramah</string>
 </resources>
