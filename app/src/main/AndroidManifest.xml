@@ -16,7 +16,7 @@
             android:name=".kajian.KajianActivity"
             android:exported="false" />
         <activity
-            android:name=".sholat.ZakatActivity"
+            android:name=".zakat.ZakatActivity"
             android:exported="false" />
         <activity
             android:name=".doa.ListDoaActivity"
@@ -39,5 +39,8 @@
             </intent-filter>
         </activity>
     </application>
+
+    <!-- Permit to internet   -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

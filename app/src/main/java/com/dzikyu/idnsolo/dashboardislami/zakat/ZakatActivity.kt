@@ -1,10 +1,9 @@
-package com.dzikyu.idnsolo.dashboardislami.sholat
+package com.dzikyu.idnsolo.dashboardislami.zakat
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
-import com.dzikyu.idnsolo.dashboardislami.R
 import com.dzikyu.idnsolo.dashboardislami.databinding.ActivityZakatBinding
 import java.text.NumberFormat
 import java.util.Locale
