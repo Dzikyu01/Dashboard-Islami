@@ -2,9 +2,11 @@ package com.dzikyu.idnsolo.dashboardislami.sholat
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import com.dzikyu.idnsolo.dashboardislami.R
 import com.dzikyu.idnsolo.dashboardislami.databinding.ActivitySholatBinding
+import com.loopj.android.http.AsyncHttpClient
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Date
@@ -21,21 +23,29 @@ class SholatActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
         initSholatView()
+        getPrayTimeData("1411")
     }
+
+    private fun getPrayTimeData(location: String) {
+        val calendar = Calendar.getInstance()
+        val tanggal = calendar.get(Calendar.DAY_OF_MONTH)
+        val tahun = calendar.get(Calendar.YEAR)
+        val bulan = calendar.get(Calendar.MONTH)
+        val client = AsyncHttpClient()
+        val url = "https://api.myquran.com/v1/sholat/jadwal/$location/$tahun/$bulan/$tanggal"
+        Log.d("SholatActivity","getPrayTimeData: $url")
+//        tes
+    }
+
 
     private fun initSholatView() {
-        val date: Date = Calendar.getInstance().time
-        val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
-        val today = dateFormat.format(date)
+        val waktu = Calendar.getInstance().time
+        val dateFormat = SimpleDateFormat("EEEE, dd MMMM yyyy", Locale.getDefault())
+        val formattedDate = dateFormat.format(waktu)
 
-        binding.tvDatePray.text = today
+        //menampilkan tanggal sekarang
+        binding.tvDatePray.text = formattedDate
 
-        initgetDataSholat(today, "Jakarta")
-    }
-
-    private fun initgetDataSholat(today: String, s: String) {
-        val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
-        val date = dateFormat.format(Date())
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

@@ -33,6 +33,9 @@ class MainActivity : AppCompatActivity() {
         binding.btnKajian.setOnClickListener {
             startActivity(Intent(this, DoaActivity::class.java))
         }
+        binding.btnSholat.setOnClickListener {
+            startActivity(Intent(this, DoaActivity::class.java))
+        }
     }
 
     private fun initRecyclerViewInspiration() {
