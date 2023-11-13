@@ -13,8 +13,8 @@
 
         <ImageView
             android:id="@+id/imgdoa"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/ic_doa_makanan_minuman" />
 
         <TextView
