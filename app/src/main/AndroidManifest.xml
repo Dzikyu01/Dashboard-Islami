@@ -31,7 +31,7 @@
             android:exported="false" />
         <activity
             android:name=".sholat.SholatActivity"
-            android:exported="false" /> 
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
