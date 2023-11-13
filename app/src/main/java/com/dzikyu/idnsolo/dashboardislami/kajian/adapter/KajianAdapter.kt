@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.dzikyu.idnsolo.dashboardislami.R
+import com.dzikyu.idnsolo.dashboardislami.kajian.DetailKajianActivity
 import com.dzikyu.idnsolo.dashboardislami.kajian.model.KajianModel
 
 class KajianAdapter(private val listKajian: ArrayList<KajianModel>) :
