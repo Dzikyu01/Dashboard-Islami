@@ -30,6 +30,9 @@
             android:name=".doa.DoaActivity"
             android:exported="false" />
         <activity
+            android:name=".sholat.SholatActivity"
+            android:exported="false" /> 
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
