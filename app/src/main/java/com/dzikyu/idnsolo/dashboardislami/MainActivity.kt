@@ -9,6 +9,7 @@ import com.dzikyu.idnsolo.dashboardislami.doa.DoaActivity
 import com.dzikyu.idnsolo.dashboardislami.inspiration.InspirationData
 import com.dzikyu.idnsolo.dashboardislami.inspiration.InspirationModel
 import com.dzikyu.idnsolo.dashboardislami.inspiration.InspirationlistAdapter
+import com.dzikyu.idnsolo.dashboardislami.kajian.KajianActivity
 import com.dzikyu.idnsolo.dashboardislami.sholat.SholatActivity
 import com.dzikyu.idnsolo.dashboardislami.zakat.ZakatActivity
 
@@ -33,10 +34,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, ZakatActivity::class.java))
         }
         binding.btnKajian.setOnClickListener {
-            startActivity(Intent(this, SholatActivity::class.java))
+            startActivity(Intent(this, KajianActivity::class.java))
         }
         binding.btnSholat.setOnClickListener {
-            startActivity(Intent(this, DoaActivity::class.java))
+            startActivity(Intent(this, SholatActivity::class.java))
         }
     }
 
