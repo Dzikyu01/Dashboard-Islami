@@ -9,6 +9,7 @@ import com.dzikyu.idnsolo.dashboardislami.doa.DoaActivity
 import com.dzikyu.idnsolo.dashboardislami.inspiration.InspirationData
 import com.dzikyu.idnsolo.dashboardislami.inspiration.InspirationModel
 import com.dzikyu.idnsolo.dashboardislami.inspiration.InspirationlistAdapter
+import com.dzikyu.idnsolo.dashboardislami.zakat.ZakatActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, DoaActivity::class.java))
         }
         binding.btnZakat.setOnClickListener {
-            startActivity(Intent(this, DoaActivity::class.java))
+            startActivity(Intent(this, ZakatActivity::class.java))
         }
         binding.btnKajian.setOnClickListener {
             startActivity(Intent(this, DoaActivity::class.java))
