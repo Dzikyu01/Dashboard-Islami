@@ -18,6 +18,6 @@ object InspirationData {
                 list.add(inspiration)
             }
 
-            return listdata
+            return list
         }
 }
