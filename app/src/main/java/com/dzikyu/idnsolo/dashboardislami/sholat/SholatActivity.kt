@@ -50,14 +50,21 @@ class SholatActivity : AppCompatActivity() {
                 val responseData = responseBody?.let {String(it)}
 
                 try {
-                    // Parsing json
-                    val responseObject = JSONObject(responseData)
-                    val data = responseObject.getJSONObject("data")
+                    // 1. mengambil seluruh data
+                    val responObject = JSONObject(responData.toString())
+                    // cek apakah data terambil
+                    Log.d("JadwalSholatActivity", "Data JSON: $responObject")
+                    // ambil bagian data
+                    val data = responObject.getJSONObject("data")
+                    // tampilkan lokasi dalam data ke UI
+                    binding.tvLocation.text = data.getString("lokasi")
+                    // mengambil bagian jadwal
                     val jadwal = data.getJSONObject("jadwal")
-                    val lokasi = data.getJSONObject("lokasi")
-                    binding.tvLocation.text = lokasi.getString("kota")
-                    binding.tvDatePray.text = jadwal.getString("tanggal")
-                    binding.tvPrayTimeSubuh.text =jadwal.getString("subuh")
+                    // cek apakah data terambil
+                    Log.d("JadwalSholatActivity", "Jadwal : $jadwal")
+                    // tampilkan data jadwal ke komponen UI
+                    binding.tvPrayTimeSubuh.text = jadwal.getString("subuh")
+                    binding.tvPrayTimeSunrise.text = jadwal.getString("terbit")
                     binding.tvPrayTimeDzuhur.text = jadwal.getString("dzuhur")
                     binding.tvPrayTimeAshar.text = jadwal.getString("ashar")
                     binding.tvPrayTimeMaghrib.text = jadwal.getString("maghrib")
